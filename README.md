@@ -109,12 +109,4 @@ streamlit run app/Home.py
 - A supervised ML classifier (scikit-learn) trained on historical ratio data as a secondary, quantitative check alongside the LLM's qualitative recommendation
 - Earnings call transcript ingestion
 - Altman Z-Score / Piotroski F-Score as first-class computed fields
-```
-
-Save this as `findoc_ai/README.md`:
-```bash
-cat > README.md << 'ENDOFREADME'
-# (paste the full content above here)
-ENDOFREADME
-```
 
