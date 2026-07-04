@@ -1,0 +1,18 @@
+# Environment secrets
+.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Data
+data/uploads/*
+data/vector_db/*
+data/reports/*
+!data/uploads/.gitkeep
+!data/vector_db/.gitkeep
+!data/reports/.gitkeep
+
+# OS
+.DS_Store

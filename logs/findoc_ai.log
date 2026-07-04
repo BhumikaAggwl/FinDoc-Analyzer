@@ -1,0 +1,158 @@
+2026-07-04 05:46:35 | INFO | __main__ - Logger working
+2026-07-04 18:13:39 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10K.htm (216724 characters)
+2026-07-04 18:13:39 | INFO | src.document_processing.document_extractor - Extracted 73 pseudo-pages from HTML
+2026-07-04 18:13:39 | INFO | src.document_processing.chunker - Created 73 chunks from 73 pages
+2026-07-04 18:13:45 | INFO | src.embeddings.embedding_engine - Embedded 5 chunks
+2026-07-04 18:13:45 | INFO | src.embeddings.vector_store - Added 5 chunks to vector store for document 'Apple_10K'
+2026-07-04 18:16:56 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10K.htm (198574 characters)
+2026-07-04 18:16:56 | INFO | src.document_processing.document_extractor - Extracted 67 pseudo-pages from HTML
+2026-07-04 18:17:50 | INFO | src.rag.retriever - Retrieved 3 chunks for query: 'What are Apple main risk factors?...'
+2026-07-04 18:18:29 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10K.htm (198574 characters)
+2026-07-04 18:18:29 | INFO | src.document_processing.document_extractor - Extracted 67 pseudo-pages from HTML
+2026-07-04 18:18:29 | INFO | src.document_processing.chunker - Created 67 chunks from 67 pages
+2026-07-04 18:19:08 | INFO | src.embeddings.embedding_engine - Embedded 40 chunks
+2026-07-04 18:19:09 | INFO | src.embeddings.vector_store - Added 40 chunks to vector store for document 'Apple_10K'
+2026-07-04 18:19:26 | INFO | src.rag.retriever - Retrieved 3 chunks for query: 'What are Apple main risk factors?...'
+2026-07-04 18:21:01 | INFO | src.rag.retriever - Retrieved 3 chunks for query: 'What are Apple main risk factors?...'
+2026-07-04 18:21:02 | INFO | src.rag.rag_pipeline - Generated answer for question: 'What are Apple main risk factors?...'
+2026-07-04 18:21:26 | INFO | src.rag.retriever - Retrieved 3 chunks for query: 'What are Apple main risk factors?...'
+2026-07-04 18:21:28 | INFO | src.rag.rag_pipeline - Generated answer for question: 'What are Apple main risk factors?...'
+2026-07-04 18:22:45 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10K.htm (198574 characters)
+2026-07-04 18:22:45 | INFO | src.document_processing.document_extractor - Extracted 67 pseudo-pages from HTML
+2026-07-04 18:22:45 | INFO | src.financial_analysis.metrics_extractor - Extracted 8/13 metrics
+2026-07-04 18:23:38 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10K.htm (198574 characters)
+2026-07-04 18:23:38 | INFO | src.document_processing.document_extractor - Extracted 67 pseudo-pages from HTML
+2026-07-04 18:23:38 | INFO | src.financial_analysis.metrics_extractor - Extracted 8/13 metrics
+2026-07-04 18:23:38 | INFO | src.financial_analysis.ratio_calculator - Calculated 5/9 ratios (rest missing due to incomplete extracted data)
+2026-07-04 18:26:05 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10K.htm (198574 characters)
+2026-07-04 18:26:05 | INFO | src.document_processing.document_extractor - Extracted 67 pseudo-pages from HTML
+2026-07-04 18:26:05 | INFO | src.financial_analysis.metrics_extractor - Extracted 8/13 metrics
+2026-07-04 18:26:05 | INFO | src.financial_analysis.ratio_calculator - Calculated 5/9 ratios (rest missing due to incomplete extracted data)
+2026-07-04 18:26:05 | INFO | database.repository - Saved filing: Apple_10K
+2026-07-04 18:26:05 | INFO | database.repository - Saved 13 metrics for filing_id=1
+2026-07-04 18:26:05 | INFO | database.repository - Saved 9 ratios for filing_id=1
+2026-07-04 18:27:51 | INFO | src.rag.retriever - Retrieved 5 chunks for query: 'Describe the company's business model, products, and revenue...'
+2026-07-04 22:20:44 | INFO | src.rag.retriever - Retrieved 5 chunks for query: 'overall financial performance, growth outlook, and risks rel...'
+2026-07-04 22:23:30 | INFO | __main__ - Found 7 files to ingest
+2026-07-04 22:23:30 | INFO | __main__ - --- Ingesting Apple_10Q.htm ---
+2026-07-04 22:23:31 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10Q.htm (57408 characters)
+2026-07-04 22:23:31 | INFO | src.document_processing.document_extractor - Extracted 20 pseudo-pages from HTML
+2026-07-04 22:23:31 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10Q.htm (57408 characters)
+2026-07-04 22:23:31 | INFO | src.document_processing.document_extractor - Extracted 20 pseudo-pages from HTML
+2026-07-04 22:23:31 | INFO | src.document_processing.chunker - Created 20 chunks from 20 pages
+2026-07-04 22:23:51 | INFO | src.embeddings.embedding_engine - Embedded 20 chunks
+2026-07-04 22:23:52 | INFO | src.embeddings.vector_store - Added 20 chunks to vector store for document 'Apple_10Q'
+2026-07-04 22:23:52 | INFO | src.financial_analysis.metrics_extractor - Extracted 8/13 metrics
+2026-07-04 22:23:52 | INFO | src.financial_analysis.ratio_calculator - Calculated 6/9 ratios (rest missing due to incomplete extracted data)
+2026-07-04 22:23:52 | INFO | database.repository - Saved filing: Apple_10Q
+2026-07-04 22:23:52 | INFO | database.repository - Saved 13 metrics for filing_id=2
+2026-07-04 22:23:52 | INFO | database.repository - Saved 9 ratios for filing_id=2
+2026-07-04 22:23:52 | INFO | __main__ - Completed ingestion for Apple_10Q
+2026-07-04 22:23:52 | INFO | __main__ - --- Ingesting Nvidia_10K.htm ---
+2026-07-04 22:23:52 | INFO | src.document_processing.document_extractor - Opened HTML: Nvidia_10K.htm (336365 characters)
+2026-07-04 22:23:52 | INFO | src.document_processing.document_extractor - Extracted 113 pseudo-pages from HTML
+2026-07-04 22:23:53 | INFO | src.document_processing.document_extractor - Opened HTML: Nvidia_10K.htm (336365 characters)
+2026-07-04 22:23:53 | INFO | src.document_processing.document_extractor - Extracted 113 pseudo-pages from HTML
+2026-07-04 22:23:53 | INFO | src.document_processing.chunker - Created 113 chunks from 113 pages
+2026-07-04 22:24:34 | INFO | src.embeddings.embedding_engine - Embedded 40 chunks
+2026-07-04 22:24:34 | INFO | src.embeddings.vector_store - Added 40 chunks to vector store for document 'Nvidia_10K'
+2026-07-04 22:24:34 | INFO | src.financial_analysis.metrics_extractor - Extracted 8/13 metrics
+2026-07-04 22:24:34 | INFO | src.financial_analysis.ratio_calculator - Calculated 4/9 ratios (rest missing due to incomplete extracted data)
+2026-07-04 22:24:34 | INFO | database.repository - Saved filing: Nvidia_10K
+2026-07-04 22:24:34 | INFO | database.repository - Saved 13 metrics for filing_id=3
+2026-07-04 22:24:34 | INFO | database.repository - Saved 9 ratios for filing_id=3
+2026-07-04 22:24:34 | INFO | __main__ - Completed ingestion for Nvidia_10K
+2026-07-04 22:24:34 | INFO | __main__ - --- Ingesting Tesla_10K.htm ---
+2026-07-04 22:24:34 | INFO | src.document_processing.document_extractor - Opened HTML: Tesla_10K.htm (393819 characters)
+2026-07-04 22:24:34 | INFO | src.document_processing.document_extractor - Extracted 132 pseudo-pages from HTML
+2026-07-04 22:24:35 | INFO | src.document_processing.document_extractor - Opened HTML: Tesla_10K.htm (393819 characters)
+2026-07-04 22:24:35 | INFO | src.document_processing.document_extractor - Extracted 132 pseudo-pages from HTML
+2026-07-04 22:24:35 | INFO | src.document_processing.chunker - Created 132 chunks from 132 pages
+2026-07-04 22:24:40 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 5: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:24:41 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 6: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:24:41 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 7: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:24:42 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 8: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:24:43 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 9: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:24:43 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 10: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:25:16 | INFO | src.embeddings.embedding_engine - Embedded 40 chunks
+2026-07-04 22:25:16 | INFO | src.embeddings.vector_store - Added 34 chunks to vector store for document 'Tesla_10K'
+2026-07-04 22:25:16 | INFO | src.financial_analysis.metrics_extractor - Extracted 11/13 metrics
+2026-07-04 22:25:16 | INFO | src.financial_analysis.ratio_calculator - Calculated 7/9 ratios (rest missing due to incomplete extracted data)
+2026-07-04 22:25:16 | INFO | database.repository - Saved filing: Tesla_10K
+2026-07-04 22:25:16 | INFO | database.repository - Saved 13 metrics for filing_id=4
+2026-07-04 22:25:16 | INFO | database.repository - Saved 9 ratios for filing_id=4
+2026-07-04 22:25:16 | INFO | __main__ - Completed ingestion for Tesla_10K
+2026-07-04 22:25:16 | INFO | __main__ - --- Ingesting Alphabet_10K.htm ---
+2026-07-04 22:25:17 | INFO | src.document_processing.document_extractor - Opened HTML: Alphabet_10K.htm (336926 characters)
+2026-07-04 22:25:17 | INFO | src.document_processing.document_extractor - Extracted 113 pseudo-pages from HTML
+2026-07-04 22:25:18 | INFO | src.document_processing.document_extractor - Opened HTML: Alphabet_10K.htm (336926 characters)
+2026-07-04 22:25:18 | INFO | src.document_processing.document_extractor - Extracted 113 pseudo-pages from HTML
+2026-07-04 22:25:18 | INFO | src.document_processing.chunker - Created 113 chunks from 113 pages
+2026-07-04 22:25:59 | INFO | src.embeddings.embedding_engine - Embedded 40 chunks
+2026-07-04 22:25:59 | INFO | src.embeddings.vector_store - Added 40 chunks to vector store for document 'Alphabet_10K'
+2026-07-04 22:25:59 | INFO | src.financial_analysis.metrics_extractor - Extracted 9/13 metrics
+2026-07-04 22:25:59 | INFO | src.financial_analysis.ratio_calculator - Calculated 6/9 ratios (rest missing due to incomplete extracted data)
+2026-07-04 22:25:59 | INFO | database.repository - Saved filing: Alphabet_10K
+2026-07-04 22:25:59 | INFO | database.repository - Saved 13 metrics for filing_id=5
+2026-07-04 22:25:59 | INFO | database.repository - Saved 9 ratios for filing_id=5
+2026-07-04 22:25:59 | INFO | __main__ - Completed ingestion for Alphabet_10K
+2026-07-04 22:25:59 | INFO | __main__ - --- Ingesting Apple_10K.htm ---
+2026-07-04 22:26:00 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10K.htm (198574 characters)
+2026-07-04 22:26:00 | INFO | src.document_processing.document_extractor - Extracted 67 pseudo-pages from HTML
+2026-07-04 22:26:00 | INFO | src.document_processing.document_extractor - Opened HTML: Apple_10K.htm (198574 characters)
+2026-07-04 22:26:00 | INFO | src.document_processing.document_extractor - Extracted 67 pseudo-pages from HTML
+2026-07-04 22:26:00 | INFO | src.document_processing.chunker - Created 67 chunks from 67 pages
+2026-07-04 22:26:37 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 36: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:26:38 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 37: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:26:39 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 38: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:26:39 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 39: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:26:39 | INFO | src.embeddings.embedding_engine - Embedded 40 chunks
+2026-07-04 22:26:39 | INFO | src.embeddings.vector_store - Added 36 chunks to vector store for document 'Apple_10K'
+2026-07-04 22:26:40 | INFO | src.financial_analysis.metrics_extractor - Extracted 8/13 metrics
+2026-07-04 22:26:40 | INFO | src.financial_analysis.ratio_calculator - Calculated 5/9 ratios (rest missing due to incomplete extracted data)
+2026-07-04 22:26:40 | INFO | database.repository - Filing 'Apple_10K' already exists, returning existing ID
+2026-07-04 22:26:40 | INFO | database.repository - Saved 13 metrics for filing_id=1
+2026-07-04 22:26:40 | INFO | database.repository - Saved 9 ratios for filing_id=1
+2026-07-04 22:26:40 | INFO | __main__ - Completed ingestion for Apple_10K
+2026-07-04 22:26:40 | INFO | __main__ - --- Ingesting Meta_10K.htm ---
+2026-07-04 22:26:41 | INFO | src.document_processing.document_extractor - Opened HTML: Meta_10K.htm (484342 characters)
+2026-07-04 22:26:41 | INFO | src.document_processing.document_extractor - Extracted 162 pseudo-pages from HTML
+2026-07-04 22:26:43 | INFO | src.document_processing.document_extractor - Opened HTML: Meta_10K.htm (484342 characters)
+2026-07-04 22:26:43 | INFO | src.document_processing.document_extractor - Extracted 162 pseudo-pages from HTML
+2026-07-04 22:26:43 | INFO | src.document_processing.chunker - Created 162 chunks from 162 pages
+2026-07-04 22:27:26 | INFO | src.embeddings.embedding_engine - Embedded 40 chunks
+2026-07-04 22:27:27 | INFO | src.embeddings.vector_store - Added 40 chunks to vector store for document 'Meta_10K'
+2026-07-04 22:27:27 | INFO | src.financial_analysis.metrics_extractor - Extracted 11/13 metrics
+2026-07-04 22:27:27 | INFO | src.financial_analysis.ratio_calculator - Calculated 8/9 ratios (rest missing due to incomplete extracted data)
+2026-07-04 22:27:27 | INFO | database.repository - Saved filing: Meta_10K
+2026-07-04 22:27:27 | INFO | database.repository - Saved 13 metrics for filing_id=6
+2026-07-04 22:27:27 | INFO | database.repository - Saved 9 ratios for filing_id=6
+2026-07-04 22:27:27 | INFO | __main__ - Completed ingestion for Meta_10K
+2026-07-04 22:27:27 | INFO | __main__ - --- Ingesting Amazon_10K.htm ---
+2026-07-04 22:27:27 | INFO | src.document_processing.document_extractor - Opened HTML: Amazon_10K.htm (280253 characters)
+2026-07-04 22:27:27 | INFO | src.document_processing.document_extractor - Extracted 94 pseudo-pages from HTML
+2026-07-04 22:27:28 | INFO | src.document_processing.document_extractor - Opened HTML: Amazon_10K.htm (280253 characters)
+2026-07-04 22:27:28 | INFO | src.document_processing.document_extractor - Extracted 94 pseudo-pages from HTML
+2026-07-04 22:27:28 | INFO | src.document_processing.chunker - Created 94 chunks from 94 pages
+2026-07-04 22:27:42 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 13: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:27:43 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 14: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:27:45 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 16: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:27:46 | ERROR | src.embeddings.embedding_engine - Embedding failed for chunk 18: 429 Client Error: Too Many Requests for url: https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:embedContent
+2026-07-04 22:28:08 | INFO | src.embeddings.embedding_engine - Embedded 40 chunks
+2026-07-04 22:28:09 | INFO | src.embeddings.vector_store - Added 36 chunks to vector store for document 'Amazon_10K'
+2026-07-04 22:28:09 | INFO | src.financial_analysis.metrics_extractor - Extracted 7/13 metrics
+2026-07-04 22:28:09 | INFO | src.financial_analysis.ratio_calculator - Calculated 3/9 ratios (rest missing due to incomplete extracted data)
+2026-07-04 22:28:09 | INFO | database.repository - Saved filing: Amazon_10K
+2026-07-04 22:28:09 | INFO | database.repository - Saved 13 metrics for filing_id=7
+2026-07-04 22:28:09 | INFO | database.repository - Saved 9 ratios for filing_id=7
+2026-07-04 22:28:09 | INFO | __main__ - Completed ingestion for Amazon_10K
+2026-07-04 22:28:09 | INFO | __main__ - Batch ingestion complete
+2026-07-04 22:34:08 | INFO | src.rag.retriever - Retrieved 5 chunks for query: 'should i invest ...'
+2026-07-04 22:34:10 | INFO | src.rag.rag_pipeline - Generated answer for question: 'should i invest ...'
+2026-07-04 22:34:17 | INFO | src.rag.retriever - Retrieved 5 chunks for query: 'overall financial performance, growth outlook, and risks rel...'
+2026-07-04 22:37:24 | INFO | src.rag.retriever - Retrieved 5 chunks for query: 'overall financial performance, growth outlook, and risks rel...'
+2026-07-04 22:49:09 | INFO | src.rag.retriever - Retrieved 5 chunks for query: 'tell me about it what is it in short ...'
+2026-07-04 22:49:10 | INFO | src.rag.rag_pipeline - Generated answer for question: 'tell me about it what is it in short ...'
+2026-07-04 22:49:29 | INFO | src.rag.retriever - Retrieved 5 chunks for query: 'i am an early stage investor should i buy it ?...'
+2026-07-04 22:49:32 | INFO | src.rag.rag_pipeline - Generated answer for question: 'i am an early stage investor should i buy it ?...'
+2026-07-04 22:49:39 | INFO | src.rag.retriever - Retrieved 5 chunks for query: 'overall financial performance, growth outlook, and risks rel...'
