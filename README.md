@@ -65,6 +65,44 @@ RAG pipeline (Groq LLM,             │
 | UI | Streamlit |
 | Language | Python 3.11, fully typed, modular architecture |
 
+
+## Repository structure
+
+```
+findoc_ai/
+├── app/
+│   └── Home.py                    # Streamlit chat UI
+├── src/
+│   ├── document_processing/
+│   │   ├── document_extractor.py  # PDF/HTML text extraction
+│   │   └── chunker.py             # Overlapping text chunking
+│   ├── embeddings/
+│   │   ├── embedding_engine.py    # Gemini embedding calls
+│   │   └── vector_store.py        # ChromaDB wrapper
+│   ├── rag/
+│   │   ├── retriever.py           # Semantic search over chunks
+│   │   └── rag_pipeline.py        # Retrieval + Groq generation
+│   ├── financial_analysis/
+│   │   ├── metrics_extractor.py   # Regex-based metric extraction
+│   │   └── ratio_calculator.py    # ROE, ROA, margins, etc.
+│   └── analysis_engine/
+│       ├── insight_generator.py       # Section-wise analyst commentary
+│       └── investment_recommender.py  # BUY/HOLD/SELL + confidence
+├── database/
+│   ├── models.py                  # SQLAlchemy ORM schema
+│   └── repository.py              # SQL read/write functions
+├── scripts/
+│   ├── download_filings.py        # Pulls sample filings from SEC EDGAR
+│   └── ingest_all.py              # Batch ingestion pipeline
+├── config.py                      # Centralized settings
+├── logger.py                      # Structured logging
+├── requirements.txt
+└── data/
+    ├── uploads/                   # Raw filings (gitignored)
+    ├── vector_db/                 # ChromaDB persistence (gitignored)
+    └── findoc.db                  # SQLite database (gitignored)
+```
+
 ## Design rationale
 
 **Why RAG instead of fine-tuning.** Fine-tuning bakes a fixed set of facts into model weights — it's the wrong tool when the actual requirement is "answer questions about whichever document was just uploaded," including documents the model has never seen, for companies it may never be retrained on. RAG keeps the LLM generic and grounds every answer in text retrieved from the specific filing at query time. This is also what makes citation possible: because the answer is built from retrieved, page-tagged chunks, the system can point to "page 22" rather than asserting a fact from opaque model weights. It mirrors how real institutional research tools (Bloomberg, FactSet, AlphaSense) are built — retrieval over a document corpus, not a fine-tuned model per client or per filing.
@@ -101,6 +139,20 @@ Run the app:
 ```bash
 streamlit run app/Home.py
 ```
+
+## Example queries
+
+- "What are the company's main risk factors?"
+- "Summarize the business model and revenue sources"
+- "What is management's outlook on growth?"
+- "Discuss the company's capital allocation strategy"
+
+## What I'd do with more time
+
+- Replace regex-based metric extraction with XBRL tag parsing for reliable numbers
+- Add multi-document comparison (the SQL schema already supports it)
+- Add a small supervised ML model as a secondary check alongside the LLM recommendation
+- Move ChromaDB to a hosted vector DB and SQLite to Postgres for concurrent access
 
 ## Known limitations (and what a v2 would do)
 
