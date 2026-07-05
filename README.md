@@ -13,7 +13,7 @@ Upload or ingest a financial filing (10-K, 10-Q, annual report), and the system:
 - Calculates standard financial ratios (ROE, ROA, D/E, current ratio, etc.)
 - Generates a BUY / HOLD / SELL recommendation with a confidence score and rationale
 - Persists structured data in SQL and unstructured embeddings in a vector store
-- 
+  
 ## Demo
 
 ![FinDoc AI Dashboard](dashboard.png)
